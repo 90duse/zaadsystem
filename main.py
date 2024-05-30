@@ -1,8 +1,14 @@
-# Simple Zaad System 
+# Simple Zaad System
+import services 
+import lacaglabixid
+from sendmoney import Sendmoney
 
-import service 
-import systemfuntions
-service = service.Service
+
+lacaglabixid = lacaglabixid.lacaglabixidfuntion
+
+sendmoney = Sendmoney()
+services = services.Service
+
 #lacagdiridfunction = systemfuntions.lacagdiridfunction
 
 try:
@@ -18,13 +24,14 @@ try:
         print('7: Dara-Salaam Bank')
         print('10: Ka bax')
         Dooro = int(input('Dooro Adeega: '))
-        if Dooro == service.hadhaaga:
+        if Dooro == services.hadhaaga:
            print('Hadhaagaagu waa: 100$')
            exit
-        elif Dooro == service.lacagdirid:
-           systemfuntions.lacagdiridfunction()
-        elif Dooro == service.lacaglabixid:
-            systemfuntions.lacaglabixidfuntion()
+        elif Dooro == services.lacagdirid:
+            #sendmoney.lacagdiridfunction()
+            sendmoney.lacagdiridfunction()
+        elif Dooro == services.lacaglabixid:
+           lacaglabixid
         else:
             print('by')
         
@@ -35,5 +42,5 @@ try:
 
 
 except:
-    print('unkwone error occur ...')
+    print('code ka main ka ayaa error ku jiraa ...')
     
