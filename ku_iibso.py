@@ -8,8 +8,12 @@ from businessUsers import Busines_users
 now = datetime.now() # current date and time
 
 class Ku_iibso(User, Busines_users):
+    
     def kuiibsofunction(self):
+        transaction = None
+        
         try:
+            
             tariikhda = now.strftime('%Y')
             Haa = 1
             aqoonsiga_ganacsiga = int(input('Fadlan Geli numberka ganacsiga: '))
@@ -27,6 +31,7 @@ class Ku_iibso(User, Busines_users):
                         if mid_dooro ==  Haa:
                              gelibiinka = int(input('Fadlan geli number sireedkaaga si aad u fuliso codsigan: '))
                              if gelibiinka == self.biinka:
+                               
                                 print('------------------------')
                                 print('Waxaaad wax kaga iibsatay' + str(qaansheegta) + '$')
                                 print('ganacsadaha sumadiisu tahay ' + str(aqoonsiga_ganacsiga))
@@ -35,6 +40,7 @@ class Ku_iibso(User, Busines_users):
                                 print('Hadhaagu waa ' + str(hadhaagarasmiga_ah) + '$')
                                 print('Hadii aad wax caawimaad ah u baahato waydii shaqaalaha tellerka fadha')
                                 print('------------------------')
+                                transaction = str(qaansheegta)
                                  
                              else:
                                   print('Biinka aad gelisay waa qalad ee inagu kala wada')
@@ -50,19 +56,17 @@ class Ku_iibso(User, Busines_users):
 
             else:
                 print('Lambarka qaansheegta waa qalad')
+           
         except:
             print('unknwon error is accour in the ku iibso function ... please solve it ')
+        return transaction  # Return transaction variable
 
 
+user_instance = Ku_iibso()
+transaction_result = user_instance.kuiibsofunction()
+print("Transaction:", transaction_result)
+  
+
+   
 
 
-            if hubi:
-
-                            print('------------------------')
-                            print('Waxaaad wax kaga iibsatay' + str(qaansheegta) + '$')
-                            print('ganacsadaha sumadiisu tahay ' + str(aqoonsiga_ganacsiga))
-                            print('Taariikhda: ' + tariikhda  + ' Tixraaca: ' + str(self.businessnumber+self.numberka) )
-                            hadhaagarasmiga_ah = self.hadhaaga - qaansheegta
-                            print('Hadhaagu waa ' + str(hadhaagarasmiga_ah) + '$')
-                            print('Hadii aad wax caawimaad ah u baahato waydii shaqaalaha tellerka fadha')
-                            print('------------------------')
