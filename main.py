@@ -23,6 +23,8 @@ try:
            exit
         elif Dooro == service.lacagdirid:
            systemfuntions.lacagdiridfunction()
+        elif Dooro == service.lacaglabixid:
+            systemfuntions.lacaglabixidfuntion()
         else:
             print('by')
         
