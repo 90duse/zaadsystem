@@ -11,7 +11,7 @@ try:
     if shortcode == code:
         print('1: Itus Hadhaaga')
         print('2: Lacag Dirid')
-        print('3: Lacag Dhigasho')
+        print('3: Lacag la bixid')
         print('4: Ku iibso')
         print('5: itus dhaqdhaqaaq')
         print('6: E-Voucher')

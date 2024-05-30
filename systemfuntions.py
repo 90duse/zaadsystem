@@ -69,3 +69,9 @@ def lacaglabixidfuntion():
 
     except:
         print('unknwon error is accour in the function ... ')
+
+def ku_iibsofunction():
+    try:
+        print('fadlan geli lambarka qaansheegta')
+    except:
+        print('unknwon error is accour in the function ... ')
