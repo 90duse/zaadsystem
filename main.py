@@ -2,12 +2,16 @@
 import services 
 import lacaglabixid
 from sendmoney import Sendmoney
+from lacaglabixid import Lacaglabixid
+from ku_iibso import Ku_iibso
 
 
-lacaglabixid = lacaglabixid.lacaglabixidfuntion
-
-sendmoney = Sendmoney()
 services = services.Service
+sendmoney = Sendmoney()
+lacaglabixid = Lacaglabixid()
+kuiibso = Ku_iibso()
+
+
 
 #lacagdiridfunction = systemfuntions.lacagdiridfunction
 
@@ -31,7 +35,9 @@ try:
             #sendmoney.lacagdiridfunction()
             sendmoney.lacagdiridfunction()
         elif Dooro == services.lacaglabixid:
-           lacaglabixid
+           lacaglabixid.lacaglabixidfuntion()
+        elif Dooro == services.ku_iibso:
+            kuiibso.kuiibsofunction()
         else:
             print('by')
         

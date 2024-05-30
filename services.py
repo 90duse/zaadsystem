@@ -6,7 +6,7 @@ class Service:
     itus_dhaqdhaqaaq = 5
     evoucher = 6
     darasalam_bank = 7
-    kabax =10
+    kabax = 10
 
 
 
