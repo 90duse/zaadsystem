@@ -62,9 +62,9 @@ class Ku_iibso(User, Busines_users):
         return transaction  # Return transaction variable
 
 
-user_instance = Ku_iibso()
-transaction_result = user_instance.kuiibsofunction()
-print("Transaction:", transaction_result)
+# user_instance = Ku_iibso()
+# transaction_result = user_instance.kuiibsofunction()
+# print("Transaction:", transaction_result)
   
 
    

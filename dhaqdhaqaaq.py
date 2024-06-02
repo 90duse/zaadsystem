@@ -24,7 +24,7 @@ class Tusdhaqdhaqaaq(Ku_iibso):
             if dooro == dhaqdhaqaaqa_kaliya:
                 print('-------------------')
                 # print('Waxaa laguu soo diri doonaa fariin')
-                print('Waxaad lacag u dirtay ' + str(self.businessnumber ) + ' cadadkeedu yahay ' + str(self.kuiibsofunction()))
+                print('Waxaad lacag u dirtay ' + str(self.businessnumber ) + ' cadadkeedu yahay ' + str(self.kuiibsofunction))
                 print('-------------------')
             else:
                 print('Fadlan mid lanbarada meesha ku qoran kaliya dooro')
